@@ -2,3 +2,8 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     padding: 20px 60px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
