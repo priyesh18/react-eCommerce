@@ -1,16 +1,16 @@
-import React from "react";
-import "./header.styles.scss";
-import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
-import { connect } from "react-redux";
+import React from 'react';
+import './header.styles.scss';
+import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { connect } from 'react-redux';
 
-import { createStructuredSelector } from "reselect";
+import { createStructuredSelector } from 'reselect';
 
-import { auth } from "../../firebase/firebase.utils";
-import CartIcon from "../cart-icon/cart-icon.component";
-import CartDropdown from "../cart-dropdown/cart-dropdown.component";
-import { selectCartHidden } from "../../redux/cart/cart.selectors";
-import { selectCurrentUser } from "../../redux/user/user.selectors";
+import { auth } from '../../firebase/firebase.utils';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 const Header = ({ currentUser, hidden }) => (
   <div className="header">
@@ -19,8 +19,8 @@ const Header = ({ currentUser, hidden }) => (
     </Link>
     <div className="options">
       <Link className="option" to="/shop">
-        {" "}
-        SHOP{" "}
+        {' '}
+        SHOP{' '}
       </Link>
       {/* <Link className="option" to="/contact"> CONTACT </Link> */}
 

@@ -1,10 +1,10 @@
-import React from "react";
-import { connect } from "react-redux";
-import { Route } from "react-router-dom";
-import { createStructuredSelector } from "reselect";
-import { selectCollections } from "../../redux/shop/shop.selectors";
-import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
-import CollectionPage from "../collection/collection.component";
+import React from 'react';
+import { connect } from 'react-redux';
+import { Route } from 'react-router-dom';
+import { createStructuredSelector } from 'reselect';
+import { selectCollections } from '../../redux/shop/shop.selectors';
+import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
+import CollectionPage from '../collection/collection.component';
 
 const ShopPage = ({ match }) => (
   // route automatically passes match, location and history
